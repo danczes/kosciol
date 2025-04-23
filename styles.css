@@ -1,0 +1,186 @@
+/* Ogólne stylizacje strony */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(135deg, #004488, #66a3ff);
+    color: white;
+}
+
+/* Nagłówek */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #003366, #0055aa);
+    color: white;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo {
+    width: 120px;
+    margin-right: 15px;
+}
+
+/* Menu */
+nav ul {
+    list-style: none;
+    padding: 15px;
+    background: linear-gradient(90deg, #0055aa, #0088ff);
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav ul li {
+    padding: 12px 25px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+    border-radius: 8px;
+}
+
+/* Siatka sekcji */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Styl sekcji */
+.grid-item {
+    background: linear-gradient(90deg, #0055aa, #0088ff); /* Dopasowane tło do stylu menu */
+    padding: 15px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    color: white; /* Jasny tekst dla lepszej czytelności */
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Stopka */
+footer {
+    background: linear-gradient(90deg, #003366, #0055aa);
+    color: white;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Social media */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Logo YouTube - przesunięcie */
+.social-links a:nth-child(1) img {
+    width: 45px;
+    position: relative;
+    top: 5px;
+}
+
+/* Logo Instagram - powiększenie */
+.social-links a:nth-child(2) img {
+    width: 50px;
+    position: relative;
+    bottom: 5px;
+}
+
+/* Logo Facebook */
+.social-links a:nth-child(3) img {
+    width: 40px;
+}
+
+/* Efekt hover dla ikon */
+.social-links img:hover {
+    transform: scale(1.15);
+    filter: brightness(120%);
+}
+
+/* Animowane sekcje */
+.meeting-container {
+    background: linear-gradient(90deg, #0055aa, #0088ff); 
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animacja pojawiania */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Wyróżnienie dni tygodnia i godzin */
+.day {
+    font-size: 22px;
+    font-weight: bold;
+    color: #004488;
+}
+
+
+.meeting-container p {
+    font-size: 18px;
+    font-weight: bold;
+    color: white; /* Jeśli tło jest ciemne, zmień na czarny dla lepszego kontrastu */
+}
+
+.time {
+    font-size: 22px;
+    font-weight: bold;
+    color: #004488;
+}
+
+
+
+
+
+
+
+
+
+
